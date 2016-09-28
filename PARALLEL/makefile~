@@ -1,0 +1,8 @@
+assign1b.out : assign1b.o
+	g++ -o assign1b.out assign1b.o
+
+assign1b.o : assign1b.cpp
+	g++ -o assign1b.o -c assign1b.cpp
+
+clean:
+	rm assign1b.o
